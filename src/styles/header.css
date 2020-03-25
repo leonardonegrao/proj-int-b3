@@ -1,0 +1,33 @@
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin-top: 0;
+}
+
+header h1 {
+  margin: 0px 0px 0px 0px;
+  text-align: left;
+  float: left;
+}
+
+.nav {
+  list-style-type: none;
+  text-align: right;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 5px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font: lighter;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.nav li p:hover {
+  color: cadetblue;
+}
