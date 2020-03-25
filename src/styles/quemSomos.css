@@ -1,0 +1,29 @@
+.quem-somos {
+  margin: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.title {
+  font-size: 25px;
+  margin: 15px;
+}
+
+.quem-somos #descricao {
+  margin-left: 40px;
+}
+
+.perfil-wrapper {
+  height: 450px;
+  background-color: white;
+  max-width: 30%;
+  border-radius: 15px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 1%;
+}
+
+.perfil-wrapper h3 {
+  text-align: left;
+  margin-bottom: 10px;
+}
