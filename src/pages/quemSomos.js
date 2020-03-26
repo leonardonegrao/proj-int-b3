@@ -36,13 +36,15 @@ const QuemSomos = () => {
             <div>
               <img src={avatar} height="150"></img>
               <h3>Matheus Pedrero</h3>
-            </div>
+              </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse commodo orci et risus rutrum, nec tincidunt neque
-              sollicitudin. Ut sodales molestie aliquet.
+              Atualmente estudando Java, JavaScript e tecnologias web
+              (React, NodeJS, entre outras.)
             </p>
             <h5>Contato:</h5>
+            <a href="https://github.com/MatheusPedrero" target="_blank">
+              GitHub
+            </a>
           </div>
 
           <div className="perfil-wrapper">
