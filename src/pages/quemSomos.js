@@ -11,10 +11,11 @@ const QuemSomos = () => {
     <Layout>
       <div className="quem-somos">
         <h2 className="title">Quem Somos</h2>
-        <p id="descricao">
+        <p id="description">
           Somos três estudantes de Engenharia de Software da UniFil, atualmente
           no 3º Período.
         </p>
+
         <div>
           <div className="perfil-wrapper">
             <div>
@@ -25,10 +26,12 @@ const QuemSomos = () => {
               Estudante de Engenharia de Software na UniFil. Estudando React,
               NodeJS, entre outras tecnologias web, como também Java.
             </p>
+            <h5>Contato:</h5>
             <a href="https://github.com/leonardonegrao" target="_blank">
               GitHub
             </a>
           </div>
+
           <div className="perfil-wrapper">
             <div>
               <img src={avatar} height="150"></img>
@@ -37,11 +40,11 @@ const QuemSomos = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse commodo orci et risus rutrum, nec tincidunt neque
-              sollicitudin. Ut sodales molestie aliquet. Etiam sodales finibus
-              efficitur. Donec id augue tincidunt, euismod ipsum feugiat,
-              sodales ipsum.
+              sollicitudin. Ut sodales molestie aliquet.
             </p>
+            <h5>Contato:</h5>
           </div>
+
           <div className="perfil-wrapper">
             <div>
               <img src={avatar} height="150"></img>
@@ -50,10 +53,9 @@ const QuemSomos = () => {
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse commodo orci et risus rutrum, nec tincidunt neque
-              sollicitudin. Ut sodales molestie aliquet. Etiam sodales finibus
-              efficitur. Donec id augue tincidunt, euismod ipsum feugiat,
-              sodales ipsum.
+              sollicitudin. Ut sodales molestie aliquet.
             </p>
+            <h5>Contato:</h5>
           </div>
         </div>
       </div>

@@ -1,3 +1,17 @@
+.blog-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
 .wrapper {
   margin: 30px auto;
   padding: 5px;
@@ -20,10 +34,13 @@
   cursor: pointer;
 }
 
-.wrapper article h2 {
-  padding: 4px;
+.wrapper article h3 {
+  padding-left: 12px;
+  padding-top: 12px;
 }
 
 .wrapper article p {
-  padding: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-bottom: 12px;
 }
