@@ -7,6 +7,7 @@ import "../styles/ProjetosPessoais.css"
 import filmesbrScreens from "../images/projects-screens/filmesbr-ps.png"
 import casaDoCodigoScreen from "../images/projects-screens/casaDoCodigoMain.jpg"
 import jsHuntScreens from "../images/projects-screens/jshunt-screens.png"
+import iCooking from "../images/projects-screens/iCooking.png"
 
 const ProjetosPessoais = () => {
   return (
@@ -70,6 +71,16 @@ const ProjetosPessoais = () => {
         >
           Repositório no GitHub
         </a>
+        <p className="separator">
+          __________________________________________________________________________________________________
+        </p>
+        <h3>iCooking - Matheus Pedrero</h3>
+        <p>Aplicativo em Ionic realizado para o projeto interdisciplinar do ano anterior.</p>
+        <img src={iCooking}></img>
+        <p>
+          O projeto tinha como propósito agilizar os processos de compra e 
+          retirada de produtos das cantinas da Unifil.
+        </p>
         <p className="separator">
           __________________________________________________________________________________________________
         </p>
