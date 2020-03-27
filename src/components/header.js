@@ -18,16 +18,40 @@ const Header = () => {
       <div className="nav">
         <ul>
           <li>
-            <Link to="/">Blog</Link>
+            <Link
+              className="menu-option"
+              activeClassName="active-menu-option"
+              to="/"
+            >
+              Blog
+            </Link>
           </li>
           <li>
-            <Link to="/projetosPessoais">Projetos Pessoais</Link>
+            <Link
+              className="menu-option"
+              activeClassName="active-menu-option"
+              to="/projetosPessoais"
+            >
+              Projetos Pessoais
+            </Link>
           </li>
           <li>
-            <Link to="/quemSomos">Quem Somos</Link>
+            <Link
+              className="menu-option"
+              activeClassName="active-menu-option"
+              to="/quemSomos"
+            >
+              Quem Somos
+            </Link>
           </li>
           <li>
-            <Link to="/techStack">Tech Stack</Link>
+            <Link
+              className="menu-option"
+              activeClassName="active-menu-option"
+              to="/techStack"
+            >
+              Tech Stack
+            </Link>
           </li>
         </ul>
       </div>

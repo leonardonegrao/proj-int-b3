@@ -21,6 +21,9 @@ header h1 {
 }
 
 .nav li a {
+}
+
+.menu-option {
   text-decoration: none;
   color: black;
   font: lighter;
@@ -29,5 +32,9 @@ header h1 {
 }
 
 .nav li a:hover {
+  color: rgb(12, 161, 161);
+}
+
+.active-menu-option {
   color: rgb(12, 161, 161);
 }
