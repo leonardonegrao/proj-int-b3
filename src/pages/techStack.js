@@ -25,7 +25,7 @@ const TechStack = () => {
           ou até mesmo para desktops.
         </p>
         <p className="description">
-          Angular, ReactJS, NodeJS, HTML5, Javascript, CSS3, Ionic, Java
+          Angular | ReactJS | NodeJS | HTML5 | Javascript | CSS3 | Ionic | Java
         </p>
 
         <div className="techs">

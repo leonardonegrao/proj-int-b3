@@ -9,6 +9,10 @@ header h1 {
   float: left;
 }
 
+header h1 img {
+  height: 60px;
+}
+
 .nav {
   list-style-type: none;
   text-align: right;

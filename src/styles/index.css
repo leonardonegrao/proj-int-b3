@@ -1,15 +1,17 @@
 .blog-main {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
   width: 80%;
 }
 
 h2 {
   font-size: 26px;
-  font-weight: lighter;
+  font-weight: bolder;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
+  color: rgb(12, 161, 161);
 }
 
 .wrapper {
@@ -34,16 +36,10 @@ h2 {
   cursor: pointer;
 }
 
-.wrapper article h3 {
-  padding-left: 12px;
-  padding-top: 12px;
+.content {
+  padding: 12px;
 }
 
-.wrapper article p {
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
-.wrapper article sub {
-  padding-left: 12px;
+.content h5 {
+  font-weight: lighter;
 }

@@ -1,11 +1,10 @@
 .quem-somos {
-  margin: 40px;
+  margin: 0 40px 40px 40px;
+  padding-top: 30px;
 }
 
 .title {
-  font-size: 26px;
-  font-weight: lighter;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .quem-somos #description {
