@@ -4,14 +4,14 @@ import Layout from "../components/layout"
 
 import "../styles/techStack.css"
 
-import angularIcon from "../images/angular-icon.png"
-import cssIcon from "../images/css-icon.png"
-import htmlIcon from "../images/html-icon.png"
-import ionicIcon from "../images/ionic-icon.png"
-import javaIcon from "../images/java-icon.png"
-import javascriptIcon from "../images/javascript-icon.png"
-import nodejsIcon from "../images/nodejs-icon.png"
-import reactIcon from "../images/react-icon.png"
+import angularIcon from "../images/tech-stack-icons/angular-icon.png"
+import cssIcon from "../images/tech-stack-icons/css-icon.png"
+import htmlIcon from "../images/tech-stack-icons/html-icon.png"
+import ionicIcon from "../images/tech-stack-icons/ionic-icon.png"
+import javaIcon from "../images/tech-stack-icons/java-icon.png"
+import javascriptIcon from "../images/tech-stack-icons/javascript-icon.png"
+import nodejsIcon from "../images/tech-stack-icons/nodejs-icon.png"
+import reactIcon from "../images/tech-stack-icons/react-icon.png"
 
 const TechStack = () => {
   return (
@@ -30,11 +30,17 @@ const TechStack = () => {
 
         <div className="techs">
           <div className="line-one">
-            <img src={angularIcon} alt="Angular"></img>
+            <a href="https://angularjs.org/" target="_blank">
+              <img src={angularIcon} alt="Angular"></img>
+            </a>
           </div>
           <div className="line-two">
-            <img src={reactIcon} alt="React"></img>
-            <img src={nodejsIcon} alt="Node"></img>
+            <a href="https://pt-br.reactjs.org/" target="_blank">
+              <img src={reactIcon} alt="React"></img>
+            </a>
+            <a href="https://nodejs.org/en/" target="_blank">
+              <img src={nodejsIcon} alt="Node"></img>
+            </a>
           </div>
           <div className="line-three">
             <img src={htmlIcon} alt="HTML"></img>
@@ -42,8 +48,12 @@ const TechStack = () => {
             <img src={cssIcon} alt="CSS"></img>
           </div>
           <div className="line-four">
-            <img src={ionicIcon} alt="Ionic"></img>
-            <img src={javaIcon} alt="Java"></img>
+            <a href="https://ionicframework.com/" target="_blank">
+              <img src={ionicIcon} alt="Ionic"></img>
+            </a>
+            <a href="https://www.oracle.com/br/java/" target="_blank">
+              <img src={javaIcon} alt="Java"></img>
+            </a>
           </div>
         </div>
       </div>

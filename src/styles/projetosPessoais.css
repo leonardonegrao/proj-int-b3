@@ -1,0 +1,15 @@
+.projeto-wrapper {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 30px;
+}
+
+.projeto-wrapper img {
+  height: 300px;
+}
+
+.separator {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}

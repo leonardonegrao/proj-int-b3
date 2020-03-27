@@ -19,6 +19,24 @@ export default () => (
             occaecat. Id commodo proident tempor ullamco exercitation labore
             laborum amet duis eiusmod duis do aliqua.
           </p>
+          <div hidden>
+            <p>
+              Fugiat cillum dolor ex sint. Do enim ut ipsum quis ex cillum nulla
+              mollit irure duis. Pariatur veniam pariatur fugiat do velit
+              laboris laboris. Ullamco ullamco proident anim amet irure enim
+              elit occaecat. Id commodo proident tempor ullamco exercitation
+              labore laborum amet duis eiusmod duis do aliqua.
+            </p>
+            <p>
+              Fugiat cillum dolor ex sint. Do enim ut ipsum quis ex cillum nulla
+              mollit irure duis. Pariatur veniam pariatur fugiat do velit
+              laboris laboris. Ullamco ullamco proident anim amet irure enim
+              elit occaecat. Id commodo proident tempor ullamco exercitation
+              labore laborum amet duis eiusmod duis do aliqua.
+            </p>
+          </div>
+
+          <sub>01/01/2001 - 13h00</sub>
         </article>
         <article>
           <h3>Fugiat cillum dolor ex sint</h3>
