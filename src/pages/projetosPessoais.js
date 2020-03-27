@@ -8,6 +8,7 @@ import filmesbrScreens from "../images/projects-screens/filmesbr-ps.png"
 import casaDoCodigoScreen from "../images/projects-screens/casaDoCodigoMain.jpg"
 import jsHuntScreens from "../images/projects-screens/jshunt-screens.png"
 import iCooking from "../images/projects-screens/iCooking.png"
+import trab from "../images/projects-screens/trabKanesh.png"
 
 const ProjetosPessoais = () => {
   return (
@@ -84,6 +85,18 @@ const ProjetosPessoais = () => {
         <p className="separator">
           __________________________________________________________________________________________________
         </p>
+        <h3>Projeto sobre Vetor - Daniel Pereira</h3>
+        <p>Projeto realizado para a aula do professor Edson Shinki Kaneshima no 1º semestre de 2020. </p>
+        <img src={trab}></img>
+        <p>
+          Esse projeto tinha como objetivo inserir valores em posições vazias e não vazias de um array, retornar
+          valores da primeira posição, do ultimo número e o array depois de fazer as alterações, remover elementos, 
+          verificar quantos elementos possui e converter esse array em String. 
+        </p>
+        <p className="separator">
+          __________________________________________________________________________________________________
+        </p>
+
       </div>
     </Layout>
   )

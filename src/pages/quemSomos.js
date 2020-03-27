@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import "../styles/quemSomos.css"
 
 import avatar from "../images/53981024.png"
+import foto from "../images/Screenshot_4.png"
 
 const QuemSomos = () => {
   return (
@@ -49,15 +50,16 @@ const QuemSomos = () => {
 
           <div className="perfil-wrapper">
             <div>
-              <img src={avatar} height="150"></img>
+              <img src={foto} height="150"></img>
               <h3>Daniel Pereira</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse commodo orci et risus rutrum, nec tincidunt neque
-              sollicitudin. Ut sodales molestie aliquet.
+              Estudando Engenharia de Software, com maior foco em Java, JavaScript e outras linguagens web.
             </p>
             <h5>Contato:</h5>
+            <a href="https://github.com/danielPereiraV" target="_blank">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
