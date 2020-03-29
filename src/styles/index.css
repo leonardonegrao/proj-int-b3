@@ -25,15 +25,7 @@ h2 {
 
 .wrapper article {
   margin: 20px;
-  transition: background-color 1.2s ease;
-  transition: transform 1.2s ease;
   border-radius: 15px;
-}
-
-.wrapper article:hover {
-  background-color: rgb(230, 230, 230);
-  transform: scale(1.02);
-  cursor: pointer;
 }
 
 .content {
@@ -42,4 +34,10 @@ h2 {
 
 .content h5 {
   font-weight: lighter;
+}
+
+.post-image-header {
+  display: block;
+  width: 50%;
+  margin: 15px auto;
 }

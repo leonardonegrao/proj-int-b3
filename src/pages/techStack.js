@@ -12,6 +12,7 @@ import javaIcon from "../images/tech-stack-icons/java-icon.png"
 import javascriptIcon from "../images/tech-stack-icons/javascript-icon.png"
 import nodejsIcon from "../images/tech-stack-icons/nodejs-icon.png"
 import reactIcon from "../images/tech-stack-icons/react-icon.png"
+import gatsbyIcon from "../images/tech-stack-icons/gatsby-icon.png"
 
 const TechStack = () => {
   return (
@@ -25,33 +26,64 @@ const TechStack = () => {
           ou até mesmo para desktops.
         </p>
         <p className="description">
-          Angular | ReactJS | NodeJS | HTML5 | Javascript | CSS3 | Ionic | Java
+          Angular | ReactJS | NodeJS | HTML5 | Javascript | CSS3 | Ionic |
+          GatsbyJS | Java
         </p>
 
         <div className="techs">
-          <div className="line-one">
-            <a href="https://angularjs.org/" target="_blank">
+          <div id="line-one">
+            <a
+              href="https://angularjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={angularIcon} alt="Angular"></img>
             </a>
           </div>
-          <div className="line-two">
-            <a href="https://pt-br.reactjs.org/" target="_blank">
+          <div id="line-two">
+            <a
+              href="https://pt-br.reactjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={reactIcon} alt="React"></img>
             </a>
-            <a href="https://nodejs.org/en/" target="_blank">
+            <a
+              href="https://nodejs.org/en/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={nodejsIcon} alt="Node"></img>
             </a>
           </div>
-          <div className="line-three">
+          <div id="line-three">
             <img src={htmlIcon} alt="HTML"></img>
             <img src={javascriptIcon} alt="Javascript"></img>
             <img src={cssIcon} alt="CSS"></img>
           </div>
-          <div className="line-four">
-            <a href="https://ionicframework.com/" target="_blank">
+          <div id="line-four">
+            <a
+              href="https://ionicframework.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={ionicIcon} alt="Ionic"></img>
             </a>
-            <a href="https://www.oracle.com/br/java/" target="_blank">
+
+            <a
+              href="https://www.gatsbyjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={gatsbyIcon}></img>
+            </a>
+          </div>
+          <div id="line-five">
+            <a
+              href="https://www.oracle.com/br/java/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={javaIcon} alt="Java"></img>
             </a>
           </div>

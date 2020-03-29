@@ -24,7 +24,11 @@ const ProjetosPessoais = () => {
             habilidades de Javascript avançado, como também OOP.
           </p>
 
-          <img src={filmesbrScreens}></img>
+          <img
+            className="project-img"
+            src={filmesbrScreens}
+            alt="filmesbr screens"
+          ></img>
 
           <p>
             O site possui um banco de dados de filmes (guardado em um arquivo
@@ -35,18 +39,21 @@ const ProjetosPessoais = () => {
           <a
             href="https://github.com/leonardonegrao/filmesbr-site"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Repositório no GitHub
           </a>
-          <p className="separator">
-            __________________________________________________________________________________________________
-          </p>
+          <div className="separator"></div>
           <h3>Casa Do Código - Leonardo Negrão</h3>
           <p>
             Projeto simples para estudo de ReactJS, seguindo as aulas de um
             curso da Alura.
           </p>
-          <img src={casaDoCodigoScreen}></img>
+          <img
+            className="project-img"
+            src={casaDoCodigoScreen}
+            alt="casa do código screens"
+          ></img>
           <p>
             O site permite a adição e remoção de livros de uma lista. O projeto
             ainda está em desenvolvimento, conforme o acompanhamento do curso.
@@ -54,15 +61,18 @@ const ProjetosPessoais = () => {
           <a
             href="https://github.com/leonardonegrao/alura-react-casa-do-codigo"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Repositório no GitHub
           </a>
-          <p className="separator">
-            __________________________________________________________________________________________________
-          </p>
+          <div className="separator"></div>
           <h3>JSHunt - Leonardo Negrão</h3>
           <p>Site em ReactJS para acompanhamento de curso da Rocketseat.</p>
-          <img src={jsHuntScreens}></img>
+          <img
+            className="project-img"
+            src={jsHuntScreens}
+            alt="JSHunt screens"
+          ></img>
           <p>
             O projeto tinha como propósito treinar o que foi ensinado no curso,
             principalmente paginação e a utilização de uma lista dinâmica.
@@ -70,31 +80,36 @@ const ProjetosPessoais = () => {
           <a
             href="https://github.com/leonardonegrao/rocketseat-reactjs"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Repositório no GitHub
           </a>
-          <p className="separator">
-            __________________________________________________________________________________________________
-          </p>
+          <div className="separator"></div>
           <h3>iCooking - Matheus Pedrero</h3>
           <p>
             Aplicativo em Ionic realizado para o projeto interdisciplinar do ano
             anterior.
           </p>
-          <img src={iCooking}></img>
+          <img
+            className="project-img"
+            src={iCooking}
+            alt="iCooking screens"
+          ></img>
           <p>
             O projeto tinha como propósito agilizar os processos de compra e
             retirada de produtos das cantinas da Unifil.
           </p>
-          <p className="separator">
-            __________________________________________________________________________________________________
-          </p>
+          <div className="separator"></div>
           <h3>Projeto sobre Vetor - Daniel Pereira</h3>
           <p>
             Projeto realizado para a aula do professor Edson Shinki Kaneshima no
             1º semestre de 2020.{" "}
           </p>
-          <img src={trab}></img>
+          <img
+            className="project-img"
+            src={trab}
+            alt="Projeto sobre Vetor screens"
+          ></img>
           <p>
             Esse projeto tinha como objetivo inserir valores em posições vazias
             e não vazias de um array, retornar valores da primeira posição, do
@@ -102,9 +117,7 @@ const ProjetosPessoais = () => {
             elementos, verificar quantos elementos possui e converter esse array
             em String.
           </p>
-          <p className="separator">
-            __________________________________________________________________________________________________
-          </p>
+          <div className="separator"></div>
         </div>
       </div>
     </Layout>

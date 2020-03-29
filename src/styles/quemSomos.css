@@ -27,3 +27,7 @@
 .perfil-wrapper img {
   border-radius: 15px;
 }
+
+.perfil-wrapper .contact a {
+  margin-right: 8px;
+}

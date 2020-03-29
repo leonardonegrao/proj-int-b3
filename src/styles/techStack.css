@@ -24,15 +24,6 @@
   transition: transform 1.2s ease;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
 .techs img:hover {
   transform: scale(1.2);
   animation: none;

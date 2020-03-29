@@ -11,7 +11,7 @@ const Header = () => {
       <div>
         <h1>
           <Link to="/">
-            <img src={icon}></img>
+            <img src={icon} alt="Big Three"></img>
           </Link>
         </h1>
       </div>

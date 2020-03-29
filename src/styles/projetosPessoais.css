@@ -8,12 +8,17 @@
   padding-top: 30px;
 }
 
-.projeto-wrapper img {
+.project-img {
   height: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 15px;
 }
 
 .separator {
   margin-top: 20px;
   margin-bottom: 20px;
   text-align: center;
+  background-color: black;
+  height: 1px;
 }

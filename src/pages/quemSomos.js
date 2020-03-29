@@ -4,8 +4,9 @@ import Layout from "../components/layout"
 
 import "../styles/quemSomos.css"
 
-import avatar from "../images/53981024.png"
-import foto from "../images/Screenshot_4.png"
+import avatarDaniel from "../images/quem-somos/Screenshot_4.png"
+import avatarMatheus from "../images/quem-somos/avatar-matheus.jpeg"
+import avatarLeonardo from "../images/quem-somos/avatar-leonardo.jpg"
 
 const QuemSomos = () => {
   return (
@@ -20,46 +21,76 @@ const QuemSomos = () => {
         <div>
           <div className="perfil-wrapper">
             <div>
-              <img src={avatar} height="150"></img>
+              <img
+                src={avatarLeonardo}
+                height="150"
+                alt="Leonardo Negrão"
+              ></img>
               <h3>Leonardo Negrão</h3>
             </div>
             <p>
               Estudante de Engenharia de Software na UniFil. Estudando React,
               NodeJS, entre outras tecnologias web, como também Java.
             </p>
-            <h5>Contato:</h5>
-            <a href="https://github.com/leonardonegrao" target="_blank">
-              GitHub
-            </a>
+            <div className="contact">
+              <h5>Contato:</h5>
+              <a
+                href="https://github.com/leonardonegrao"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           <div className="perfil-wrapper">
             <div>
-              <img src={avatar} height="150"></img>
+              <img src={avatarMatheus} height="150" alt="Matheus Pedrero"></img>
               <h3>Matheus Pedrero</h3>
-              </div>
+            </div>
             <p>
-              Atualmente estudando Java, JavaScript e tecnologias web
-              (React, NodeJS, entre outras.)
+              Atualmente estudando Java, JavaScript e tecnologias web (React,
+              NodeJS, entre outras).
             </p>
-            <h5>Contato:</h5>
-            <a href="https://github.com/MatheusPedrero" target="_blank">
-              GitHub
-            </a>
+            <div className="contact">
+              <h5>Contato:</h5>
+              <a
+                href="https://github.com/MatheusPedrero"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
 
           <div className="perfil-wrapper">
             <div>
-              <img src={foto} height="150"></img>
+              <img src={avatarDaniel} height="150" alt="Daniel Pereira"></img>
               <h3>Daniel Pereira</h3>
             </div>
             <p>
-              Estudando Engenharia de Software, com maior foco em Java, JavaScript e outras linguagens web.
+              Estudando Engenharia de Software, com maior foco em Java,
+              JavaScript e outras linguagens web.
             </p>
-            <h5>Contato:</h5>
-            <a href="https://github.com/danielPereiraV" target="_blank">
-              GitHub
-            </a>
+            <div className="contact">
+              <h5>Contato:</h5>
+              <a
+                href="https://github.com/danielPereiraV"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
           </div>
         </div>
       </div>
