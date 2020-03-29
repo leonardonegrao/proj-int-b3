@@ -75,7 +75,7 @@ const TechStack = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={gatsbyIcon}></img>
+              <img src={gatsbyIcon} alt="GatsbyJS"></img>
             </a>
           </div>
           <div id="line-five">
