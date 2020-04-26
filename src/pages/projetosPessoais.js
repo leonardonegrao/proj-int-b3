@@ -1,8 +1,9 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 
-import "../styles/ProjetosPessoais.css"
+import "../styles/projetosPessoais.css"
 
 import filmesbrScreens from "../images/projects-screens/filmesbr-ps.png"
 import casaDoCodigoScreen from "../images/projects-screens/casaDoCodigoMain.jpg"
@@ -13,6 +14,7 @@ import trab from "../images/projects-screens/trabKanesh.png"
 const ProjetosPessoais = () => {
   return (
     <Layout>
+      <Head title="Projetos Pessoais" />
       <div className="projetos-main">
         <h2>Projetos Pessoais</h2>
 

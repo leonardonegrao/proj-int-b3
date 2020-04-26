@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 import "../styles/quemSomos.css"
 
@@ -11,14 +12,15 @@ import avatarLeonardo from "../images/quem-somos/avatar-leonardo.jpg"
 const QuemSomos = () => {
   return (
     <Layout>
+      <Head title="Quem Somos" />
       <div className="quem-somos">
         <h2 className="title">Quem Somos</h2>
         <p id="description">
           Somos três estudantes de Engenharia de Software da UniFil, atualmente
-          no 3º Período.
+          no 3º Período, com interesse nas tecnologias web.
         </p>
 
-        <div>
+        <div className="perfis">
           <div className="perfil-wrapper">
             <div>
               <img

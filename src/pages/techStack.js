@@ -1,6 +1,7 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import Head from "../components/head"
 
 import "../styles/techStack.css"
 
@@ -17,6 +18,7 @@ import gatsbyIcon from "../images/tech-stack-icons/gatsby-icon.png"
 const TechStack = () => {
   return (
     <Layout>
+      <Head title="Tech Stack" />
       <div className="main-tech-stack">
         <h2>Tech Stack</h2>
 
