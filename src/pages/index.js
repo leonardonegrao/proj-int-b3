@@ -4,8 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import "../styles/global.css"
-import "../styles/index.css"
+import indexStyles from "../styles/index.module.scss"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -26,27 +25,32 @@ export default () => {
   return (
     <Layout>
       <Head title="Blog" />
-      <div className="blog-main">
-        <h2>Blog</h2>
+      <div className="page-body">
+        <h1>Blog</h1>
         <div className="wrapper">
-          <article>
-            <div className="content">
-              <ol>
-                {data.allContentfulBlogPost.edges.map(edge => {
-                  return (
-                    <li>
-                      <Link to={`/blog/${edge.node.slug}`}>
-                        <h3>{edge.node.title}</h3>
-                      </Link>
-                      <h5>{edge.node.date}</h5>
-                      <h4>{edge.node.subtitle}</h4>
-                      <p>{edge.node.excerpt}</p>
-                    </li>
-                  )
-                })}
-              </ol>
-            </div>
-          </article>
+          <div className={indexStyles.content}>
+            <ol>
+              {data.allContentfulBlogPost.edges.map(edge => {
+                return (
+                  <article className="content-wrapper">
+                    <Link to={`/blog/${edge.node.slug}`}>
+                      <li>
+                        <h2>{edge.node.title}</h2>
+
+                        <h5 className={indexStyles.notLink}>
+                          {edge.node.date}
+                        </h5>
+                        <h3 className={indexStyles.notLink}>
+                          {edge.node.subtitle}
+                        </h3>
+                      </li>
+                    </Link>
+                    <div className="separator"></div>
+                  </article>
+                )
+              })}
+            </ol>
+          </div>
         </div>
       </div>
     </Layout>

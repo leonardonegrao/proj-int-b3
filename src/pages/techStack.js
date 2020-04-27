@@ -3,7 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import "../styles/techStack.css"
+import techStackStyles from "../styles/techStack.module.scss"
 
 import angularIcon from "../images/tech-stack-icons/angular-icon.png"
 import cssIcon from "../images/tech-stack-icons/css-icon.png"
@@ -19,76 +19,70 @@ const TechStack = () => {
   return (
     <Layout>
       <Head title="Tech Stack" />
-      <div className="main-tech-stack">
-        <h2>Tech Stack</h2>
+      <div className={techStackStyles.techStackBody}>
+        <h1>Tech Stack</h1>
 
-        <p>
+        <p className={techStackStyles.description}>
           Com as tecnologias mais versáteis do mercado, mantendo um padrão, é
           possível criar diferentes tipos de aplicações, sejam elas mobile, web
           ou até mesmo para desktops.
         </p>
-        <p className="description">
+        <p className={techStackStyles.descTechs}>
           Angular | ReactJS | NodeJS | HTML5 | Javascript | CSS3 | Ionic |
           GatsbyJS | Java
         </p>
 
-        <div className="techs">
-          <div id="line-one">
-            <a
-              href="https://angularjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={angularIcon} alt="Angular"></img>
-            </a>
-          </div>
-          <div id="line-two">
-            <a
-              href="https://pt-br.reactjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={reactIcon} alt="React"></img>
-            </a>
-            <a
-              href="https://nodejs.org/en/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={nodejsIcon} alt="Node"></img>
-            </a>
-          </div>
-          <div id="line-three">
-            <img src={htmlIcon} alt="HTML"></img>
-            <img src={javascriptIcon} alt="Javascript"></img>
-            <img src={cssIcon} alt="CSS"></img>
-          </div>
-          <div id="line-four">
-            <a
-              href="https://ionicframework.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={ionicIcon} alt="Ionic"></img>
-            </a>
+        <div className={techStackStyles.techs}>
+          <a
+            href="https://angularjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={angularIcon} alt="Angular"></img>
+          </a>
 
-            <a
-              href="https://www.gatsbyjs.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={gatsbyIcon} alt="GatsbyJS"></img>
-            </a>
-          </div>
-          <div id="line-five">
-            <a
-              href="https://www.oracle.com/br/java/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={javaIcon} alt="Java"></img>
-            </a>
-          </div>
+          <a
+            href="https://pt-br.reactjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={reactIcon} alt="React"></img>
+          </a>
+          <a
+            href="https://nodejs.org/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={nodejsIcon} alt="Node"></img>
+          </a>
+
+          <img src={htmlIcon} alt="HTML"></img>
+          <img src={javascriptIcon} alt="Javascript"></img>
+          <img src={cssIcon} alt="CSS"></img>
+
+          <a
+            href="https://ionicframework.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={ionicIcon} alt="Ionic"></img>
+          </a>
+
+          <a
+            href="https://www.gatsbyjs.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={gatsbyIcon} alt="GatsbyJS"></img>
+          </a>
+
+          <a
+            href="https://www.oracle.com/br/java/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={javaIcon} alt="Java"></img>
+          </a>
         </div>
       </div>
     </Layout>

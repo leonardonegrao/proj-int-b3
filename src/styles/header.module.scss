@@ -10,7 +10,9 @@ header h1 {
 }
 
 header h1 img {
+  display: inline-block;
   height: 60px;
+  vertical-align: middle;
 }
 
 .nav {
@@ -24,21 +26,15 @@ header h1 img {
   border-radius: 7px;
 }
 
-.nav li a {
-}
-
 .menu-option {
-  text-decoration: none;
-  color: black;
-  font: lighter;
-  font-size: 15px;
+  font-weight: bold;
   transition: color 0.4s ease;
 }
 
 .nav li a:hover {
-  color: rgb(12, 161, 161);
+  color: black;
 }
 
 .active-menu-option {
-  color: rgb(12, 161, 161);
+  color: black;
 }

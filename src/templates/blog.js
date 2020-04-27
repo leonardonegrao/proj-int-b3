@@ -5,7 +5,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import "../styles/blog.css"
+import blogPostStyles from "../styles/blogPosts.module.scss"
 
 export const query = graphql`
   query($slug: String!) {
@@ -33,7 +33,7 @@ const Blog = props => {
   return (
     <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
-      <div className="blog">
+      <div className="page-body">
         <h2>{props.data.contentfulBlogPost.title}</h2>
         <h4>{props.data.contentfulBlogPost.date}</h4>
         <h3>{props.data.contentfulBlogPost.subtitle}</h3>

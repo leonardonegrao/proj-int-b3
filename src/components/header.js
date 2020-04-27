@@ -1,9 +1,11 @@
 import React from "react"
+import StickyHeader from "react-sticky-header"
 import { Link } from "gatsby"
 
 import icon from "../images/big-three-icon.png"
 
-import "../styles/header.css"
+import "../styles/global.scss"
+import headerStyles from "../styles/header.module.scss"
 
 const Header = () => {
   return (
@@ -15,42 +17,42 @@ const Header = () => {
           </Link>
         </h1>
       </div>
-      <div className="nav">
+      <div className={headerStyles.nav}>
         <ul>
           <li>
             <Link
-              className="menu-option"
-              activeClassName="active-menu-option"
+              className={headerStyles.menuOption}
+              activeClassName={headerStyles.activeMenuOption}
               to="/"
             >
-              Blog
+              <h3>Blog</h3>
             </Link>
           </li>
           <li>
             <Link
-              className="menu-option"
-              activeClassName="active-menu-option"
+              className={headerStyles.menuOption}
+              activeClassName={headerStyles.activeMenuOption}
               to="/projetosPessoais"
             >
-              Projetos Pessoais
+              <h3>Projetos Pessoais</h3>
             </Link>
           </li>
           <li>
             <Link
-              className="menu-option"
-              activeClassName="active-menu-option"
+              className={headerStyles.menuOption}
+              activeClassName={headerStyles.activeMenuOption}
               to="/quemSomos"
             >
-              Quem Somos
+              <h3>Quem Somos</h3>
             </Link>
           </li>
           <li>
             <Link
-              className="menu-option"
-              activeClassName="active-menu-option"
+              className={headerStyles.menuOption}
+              activeClassName={headerStyles.activeMenuOption}
               to="/techStack"
             >
-              Tech Stack
+              <h3>Tech Stack</h3>
             </Link>
           </li>
         </ul>
