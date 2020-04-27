@@ -15,7 +15,13 @@ export default () => {
             title
             slug
             subtitle
+            excerpt
             date
+            banner {
+              file {
+                url
+              }
+            }
           }
         }
       }
@@ -33,19 +39,31 @@ export default () => {
               {data.allContentfulBlogPost.edges.map(edge => {
                 return (
                   <article className="content-wrapper">
-                    <Link to={`/blog/${edge.node.slug}`}>
-                      <li>
-                        <h2>{edge.node.title}</h2>
+                    <li>
+                      <div className={indexStyles.banner}>
+                        <img
+                          alt={edge.node.banner.file.title}
+                          src={edge.node.banner.file.url}
+                        ></img>
+                      </div>
 
-                        <h5 className={indexStyles.notLink}>
-                          {edge.node.date}
-                        </h5>
+                      <div>
+                        <Link to={`/blog/${edge.node.slug}`}>
+                          <h2>{edge.node.title}</h2>
+                        </Link>
                         <h3 className={indexStyles.notLink}>
                           {edge.node.subtitle}
                         </h3>
-                      </li>
-                    </Link>
-                    <div className="separator"></div>
+                        <h4 className={indexStyles.notLink}>
+                          {edge.node.date}
+                        </h4>
+                        <p
+                          className={`${indexStyles.excerpt} ${indexStyles.notLink}`}
+                        >
+                          {edge.node.excerpt}
+                        </p>
+                      </div>
+                    </li>
                   </article>
                 )
               })}

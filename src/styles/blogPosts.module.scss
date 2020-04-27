@@ -1,5 +1,11 @@
-img {
+.post {
+  padding: 12px;
+}
+
+.post-img {
   display: block;
-  max-width: 90%;
-  margin: auto;
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 15px;
 }
