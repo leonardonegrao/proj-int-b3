@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import icon from "../images/big-three-icon.png"
+import icon from "../images/LogoMakr_161lgY.png"
 
 import "../styles/global.scss"
 import headerStyles from "../styles/header.module.scss"
