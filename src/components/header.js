@@ -1,5 +1,4 @@
 import React from "react"
-import StickyHeader from "react-sticky-header"
 import { Link } from "gatsby"
 
 import icon from "../images/big-three-icon.png"
