@@ -26,7 +26,7 @@ const Blog = props => {
       "embedded-asset-block": node => {
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
-        return <img className="post-image" alt={alt} src={url} />
+        return <img className={blogPostStyles.postImg} alt={alt} src={url} />
       },
     },
   }
@@ -34,14 +34,20 @@ const Blog = props => {
     <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
       <div className="page-body">
-        <h2>{props.data.contentfulBlogPost.title}</h2>
-        <h4>{props.data.contentfulBlogPost.date}</h4>
-        <h3>{props.data.contentfulBlogPost.subtitle}</h3>
+        <div className="wrapper">
+          <div className="content-wrapper">
+            <article className={blogPostStyles.post}>
+              <h1>{props.data.contentfulBlogPost.title}</h1>
+              <h2>{props.data.contentfulBlogPost.subtitle}</h2>
+              <h3>{props.data.contentfulBlogPost.date}</h3>
 
-        {documentToReactComponents(
-          props.data.contentfulBlogPost.body.json,
-          options
-        )}
+              {documentToReactComponents(
+                props.data.contentfulBlogPost.body.json,
+                options
+              )}
+            </article>
+          </div>
+        </div>
       </div>
     </Layout>
   )

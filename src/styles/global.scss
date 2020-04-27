@@ -1,10 +1,14 @@
 @use 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;1,100&display=swap';
 @use 'https://fonts.googleapis.com/css?family=Raleway&display=swap';
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 p,
 a {
   font-family: "Montserrat", sans-serif;
-  font-size: 19px;
 }
 
 a {
@@ -30,22 +34,9 @@ h6 {
 
 h1 {
   color: rgb(12, 161, 161);
-  font-size: 70px;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 100px;
-}
-
-h2 {
-  font-size: 40px;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-h4 {
-  font-size: 20px;
 }
 
 body {

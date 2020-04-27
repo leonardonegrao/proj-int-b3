@@ -46,7 +46,7 @@ const ProjetosPessoais = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={gitHubLogo} className="social"></img>
+                <img src={gitHubLogo} alt="GitHub" className="social"></img>
               </a>
             </div>
           </div>
@@ -73,7 +73,7 @@ const ProjetosPessoais = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={gitHubLogo} className="social"></img>
+                <img src={gitHubLogo} alt="GitHub" className="social"></img>
               </a>
             </div>
           </div>
@@ -97,7 +97,7 @@ const ProjetosPessoais = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={gitHubLogo} className="social"></img>
+                <img src={gitHubLogo} alt="GitHub" className="social"></img>
               </a>
             </div>
           </div>

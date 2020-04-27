@@ -19,14 +19,14 @@ const TechStack = () => {
   return (
     <Layout>
       <Head title="Tech Stack" />
-      <div className={techStackStyles.techStackBody}>
+      <div className="page-body">
         <h1>Tech Stack</h1>
 
-        <p className={techStackStyles.description}>
+        <h2 className={techStackStyles.description}>
           Com as tecnologias mais versáteis do mercado, mantendo um padrão, é
           possível criar diferentes tipos de aplicações, sejam elas mobile, web
           ou até mesmo para desktops.
-        </p>
+        </h2>
         <p className={techStackStyles.descTechs}>
           Angular | ReactJS | NodeJS | HTML5 | Javascript | CSS3 | Ionic |
           GatsbyJS | Java

@@ -1,3 +1,7 @@
+.bio {
+  text-align: center;
+}
+
 .avatar {
   border-radius: 100px;
   display: block;
@@ -7,7 +11,6 @@
 }
 
 .contact {
-  text-align: center;
   display: block;
   max-width: 50%;
   margin: auto;
@@ -15,13 +18,4 @@
 
 .contact img {
   display: inline-block;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-h3 {
-  text-align: center;
 }
