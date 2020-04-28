@@ -16,7 +16,7 @@ export default () => {
             slug
             subtitle
             excerpt
-            date
+            date(formatString: "DD/MM/YYYY")
             banner {
               file {
                 url
