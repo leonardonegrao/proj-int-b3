@@ -54,6 +54,16 @@ const Header = () => {
               <h3>Tech Stack</h3>
             </Link>
           </li>
+          <li>
+            <a
+              className={headerStyles.menuOption}
+              href="https://github.com/leonardonegrao/proj-int-b3"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Repositório</h3>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
