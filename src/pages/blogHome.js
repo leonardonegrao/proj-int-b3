@@ -4,7 +4,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import Layout from "../components/layout"
 import Head from "../components/head"
 
-import indexStyles from "../styles/index.module.scss"
+import blogStyles from "../styles/blog.module.scss"
 
 export default () => {
   const data = useStaticQuery(graphql`
@@ -15,7 +15,6 @@ export default () => {
             title
             slug
             subtitle
-            excerpt
             date(formatString: "DD/MM/YYYY")
             banner {
               file {
@@ -31,7 +30,29 @@ export default () => {
   return (
     <Layout>
       <Head title="Blog" />
-      <div className="page-body">
+
+      <div className={blogStyles.header}><div className='title-container'><h1>Blog</h1></div></div>
+
+      <div className={`${blogStyles.postsContainer} main`}>
+        {data.allContentfulBlogPost.edges.map(edge => {
+          return (
+            <article className={blogStyles.post}>
+              <div className={blogStyles.titleAndDateContainer}>
+                <Link to={`/blog/${edge.node.slug}`}>
+                  <h2>{edge.node.title}</h2>
+                </Link>
+                <sub>{edge.node.date}</sub>
+              </div>
+              <p>{edge.node.subtitle}</p>
+              <div className={blogStyles.bannerContainer}>
+                <img src={edge.node.banner.file.url}></img>
+              </div>
+            </article>
+          )
+        })}
+      </div>
+
+      {/* <div className="page-body">
         <h1>Blog</h1>
         <div className="wrapper">
           <div className={indexStyles.content}>
@@ -70,7 +91,7 @@ export default () => {
             </ol>
           </div>
         </div>
-      </div>
-    </Layout>
+      </div> */}
+    </Layout >
   )
 }

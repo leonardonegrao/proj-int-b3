@@ -1,0 +1,64 @@
+#pattern {
+  position: absolute;
+  width: 1613.006px;
+  height: 1379.654px;
+  left: 175px;
+  top: 670.346px;
+  overflow: visible;
+}
+.Polygon_2 {
+  overflow: hidden;
+  position: absolute;
+  width: 46px;
+  height: 40px;
+  transform: translate(-175px, -769.346px) matrix(1,0,0,1,293.9999,772) rotate(173deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+.Ellipse_7 {
+  position: absolute;
+  overflow: visible;
+  width: 25px;
+  height: 25px;
+  left: 0px;
+  top: 419.654px;
+}
+.Polygon_1 {
+  overflow: hidden;
+  position: absolute;
+  width: 46px;
+  height: 40px;
+  transform: translate(-175px, -769.346px) matrix(1,0,0,1,1742.0001,941) rotate(82deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+.Polygon_2_p {
+  overflow: hidden;
+  position: absolute;
+  width: 46px;
+  height: 40px;
+  transform: translate(-175px, -769.346px) matrix(1,0,0,1,617.9999,1458.9999) rotate(173deg);
+  transform-origin: center;
+  left: 0px;
+  top: 0px;
+}
+.Polygon_11 {
+  overflow: hidden;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 167px;
+  top: 1337.654px;
+  transform: matrix(1,0,0,1,0,0);
+}
+.Polygon_5 {
+  overflow: hidden;
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 1422px;
+  top: 257.654px;
+  transform: matrix(1,0,0,1,0,0);
+}

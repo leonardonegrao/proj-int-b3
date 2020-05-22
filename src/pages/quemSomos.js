@@ -1,4 +1,7 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 
 import Layout from "../components/layout"
 import Head from "../components/head"
@@ -8,105 +11,77 @@ import quemSomosStyles from "../styles/quemSomos.module.scss"
 import avatarDaniel from "../images/quem-somos/Screenshot_4.png"
 import avatarMatheus from "../images/quem-somos/avatar-matheus.jpeg"
 import avatarLeonardo from "../images/quem-somos/avatar-leonardo.jpg"
-import gitHubLogo from "../images/quem-somos/github-logo.png"
-import linkedInLogo from "../images/quem-somos/linkedin-logo.png"
 
 const QuemSomos = () => {
   return (
     <Layout>
       <Head title="Quem Somos" />
-      <div className="page-body">
-        <h1>Quem Somos</h1>
+      <div className={quemSomosStyles.header}>
+        <div className='title-container'><h1>Quem Somos</h1></div>
+      </div>
 
-        <div className="wrapper">
-          <div className={"content-wrapper"}>
-            <div className={quemSomosStyles.bio}>
-              <img
-                src={avatarLeonardo}
-                className={quemSomosStyles.avatar}
-                alt="Leonardo Negrão"
-              ></img>
-              <h2>Leonardo Negrão</h2>
-
-              <p>
-                Estudante de Engenharia de Software na UniFil. Estudando React,
-                NodeJS, entre outras tecnologias web, como também Java.
-              </p>
-              <div className={quemSomosStyles.contact}>
-                <a
-                  href="https://github.com/leonardonegrao"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={gitHubLogo} alt="GitHub" className="social"></img>
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src={linkedInLogo}
-                    alt="LinkedIn"
-                    className="social"
-                  ></img>
-                </a>
-              </div>
+      <div className='main'>
+        <div id="1" className={quemSomosStyles.member}>
+          <div className={quemSomosStyles.cardMember}>
+            <div className={quemSomosStyles.avatar}>
+              <img src={avatarLeonardo}></img>
+            </div>
+            <h1>Leonardo Negrão</h1>
+            <div className={quemSomosStyles.social}>
+              <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
             </div>
           </div>
-
-          <div className="content-wrapper">
-            <div className={quemSomosStyles.bio}>
-              <img
-                src={avatarMatheus}
-                className={quemSomosStyles.avatar}
-                alt="Matheus Pedrero"
-              ></img>
-              <h2>Matheus Pedrero</h2>
-
-              <p>
-                Atualmente estudando Java, JavaScript e tecnologias web (React,
-                NodeJS, entre outras).
-              </p>
-              <div className={quemSomosStyles.contact}>
-                <a
-                  href="https://github.com/MatheusPedrero"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={gitHubLogo} alt="GitHub" className="social"></img>
-                </a>
-              </div>
-            </div>
+          <div className={quemSomosStyles.description}>
+            <p>Estudante de Engenharia de Software na Unifil.</p>
+            <p>Trabalha com Javascript e os frameworks React e Angular, além de Node para lógicas de back-end.</p>
+            <p>Também tem envolvimento na parte de design e front-end com HTML5, CSS3 e design de interfaces em Figma e Adobe XD.</p>
           </div>
+        </div>
 
-          <div className="content-wrapper">
-            <div className={quemSomosStyles.bio}>
-              <img
-                src={avatarDaniel}
-                className={quemSomosStyles.avatar}
-                alt="Daniel Pereira"
-              ></img>
-              <h2>Daniel Pereira</h2>
-
-              <p>
-                Estudando Engenharia de Software, com maior foco em Java,
-                JavaScript e outras linguagens web.
-              </p>
-              <div className={quemSomosStyles.contact}>
-                <a
-                  href="https://github.com/danielPereiraV"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img src={gitHubLogo} alt="GitHub" className="social"></img>
-                </a>
+        <div className={quemSomosStyles.rightContainer}>
+          <div className={quemSomosStyles.member}>
+            <div className={quemSomosStyles.description}>
+              <p>Estudante de Engenharia de Software na Unifil.</p>
+              <p>Desenvolve em Java e JavaScript. Utiliza tecnologias como Angular e Ionic para ampliar as possibilidades de desenvolvimento.</p>
+            </div>
+            <div className={quemSomosStyles.cardMember}>
+              <div className={quemSomosStyles.avatar}>
+                <img src={avatarMatheus}></img>
+              </div>
+              <h1>Matheus Pedrero</h1>
+              <div className={quemSomosStyles.social}>
+                <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faGithub} /></a>
+                <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
               </div>
             </div>
           </div>
         </div>
+
+        <div id="3" className={quemSomosStyles.member}>
+          <div className={quemSomosStyles.cardMember}>
+            <div className={quemSomosStyles.avatar}>
+              <img src={avatarDaniel}></img>
+            </div>
+            <h1>Daniel Pereira</h1>
+            <div className={quemSomosStyles.social}>
+              <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+              <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+            </div>
+          </div>
+          <div className={quemSomosStyles.description}>
+            <p>Estudante de Engenharia de Software na Unifil.</p>
+            <p>Focado em programação Java, complementa seu conhecimento com front-end web e React.</p>
+          </div>
+        </div>
       </div>
-    </Layout>
+
+
+
+    </Layout >
   )
 }
 

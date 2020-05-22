@@ -24,7 +24,7 @@ const Header = () => {
         <div>
           <ul>
             <div>
-              <Link className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/blogHome'><li>Blog</li></Link>
+              <Link exact className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/blogHome'><li>Blog</li></Link>
             </div>
             <div>
               <Link className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/quemSomos'><li>Quem Somos</li></Link>

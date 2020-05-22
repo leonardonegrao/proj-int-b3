@@ -11,8 +11,12 @@ header {
 }
 
 .header-container a {
-  color: #fafafa;
   text-decoration: none;
+  transition: color 0.5s ease;
+}
+
+.header-container a:hover {
+  color: #262626;
 }
 
 header h1 {
@@ -41,17 +45,13 @@ header h1 {
   color: #fafafa;
   list-style: none;
   margin: 0 84px 0 0;
-  transition: color 0.5s ease;
-}
 
-.nav-item,
-.nav-item-active {
   align-items: center;
 }
 
-.nav-item:hover,
 .nav-item-active {
   color: #262626;
+  font-weight: 700;
 }
 
 .github-logo {
@@ -61,4 +61,8 @@ header h1 {
   align-items: flex-end;
   cursor: pointer;
   margin-right: 124px;
+}
+
+.github-logo a {
+  color: #fafafa;
 }
