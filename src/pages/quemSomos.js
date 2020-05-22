@@ -52,9 +52,9 @@ const QuemSomos = () => {
               </div>
               <h1>Matheus Pedrero</h1>
               <div className={quemSomosStyles.social}>
-                <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faGithub} /></a>
-                <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a href='https://github.com/MatheusPedrero' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faGithub} /></a>
+                <a href='https://br.linkedin.com/in/matheus-pedrero-7a71081a7' target='_blank' rel='noopener no referrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
+                <a href='mailto:matheus.pedrero@outlook.com'><FontAwesomeIcon icon={faEnvelope} /></a>
               </div>
             </div>
           </div>
