@@ -1,76 +1,73 @@
-import React from "react"
-import { graphql, useStaticQuery, Link } from "gatsby"
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Layout from "../components/layout"
-import Head from "../components/head"
+import Layout from '../components/layout';
+import Patterns from '../patterns/homePatterns'
 
-import indexStyles from "../styles/index.module.scss"
+import homeStyles from '../styles/home.module.scss'
 
-export default () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allContentfulBlogPost(sort: { fields: createdAt, order: DESC }) {
-        edges {
-          node {
-            title
-            slug
-            subtitle
-            excerpt
-            date(formatString: "DD/MM/YYYY")
-            banner {
-              file {
-                url
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
+const Home = () => {
   return (
     <Layout>
-      <Head title="Blog" />
-      <div className="page-body">
-        <h1>Blog</h1>
-        <div className="wrapper">
-          <div className={indexStyles.content}>
-            <ol>
-              {data.allContentfulBlogPost.edges.map(edge => {
-                return (
-                  <article className="content-wrapper">
-                    <li>
-                      <div className={indexStyles.banner}>
-                        <img
-                          alt={edge.node.banner.file.title}
-                          src={edge.node.banner.file.url}
-                        ></img>
-                      </div>
+      <Patterns />
 
-                      <div>
-                        <Link to={`/blog/${edge.node.slug}`}>
-                          <h2>{edge.node.title}</h2>
-                        </Link>
-                        <h3 className={indexStyles.notLink}>
-                          {edge.node.subtitle}
-                        </h3>
-                        <h4 className={indexStyles.notLink}>
-                          {edge.node.date}
-                        </h4>
-                        <p
-                          className={`${indexStyles.excerpt} ${indexStyles.notLink}`}
-                        >
-                          {edge.node.excerpt}
-                        </p>
-                      </div>
-                    </li>
-                  </article>
-                )
-              })}
-            </ol>
+      <section className={homeStyles.top}>
+        <h1>Desenvolvimento Web do começo ao fim</h1>
+        <p>Serviços de design, desenvolvimento front-end, back-end e mobile para satisfazer todas as suas necessidades.</p>
+        <div className={homeStyles.cardTop}></div>
+      </section>
+
+      <section className={homeStyles.blogSection}>
+        <h2>Acompanhe nosso blog!</h2>
+        <div className={homeStyles.flexBlog}>
+          <div className={homeStyles.cardBlog}></div>
+          <div className={homeStyles.descButtonBlog}>
+            <p>Opiniões e experiências sobre grandes tecnologias e serviços do mercado.</p>
+            <Link to='/blogHome'>
+              <button type="button">Ver Mais</button>
+            </Link>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section className={homeStyles.techsSection}>
+        <h2>Conheça nossas tecnologias!</h2>
+        <div className={homeStyles.techsCards}>
+          <div className={`${homeStyles.techCard} ${homeStyles.reactCard}`}></div>
+          <div className={`${homeStyles.techCard} ${homeStyles.jsCard}`}></div>
+          <div className={`${homeStyles.techCard} ${homeStyles.angularCard}`}></div>
+        </div>
+        <div className={homeStyles.buttonCenter}>
+          <Link to='/techStack'>
+            <button>Conhecer</button>
+          </Link>
+        </div>
+      </section>
+
+      <section className={homeStyles.contactSection}>
+        <h2>Fale Conosco!</h2>
+        <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+          <div className={homeStyles.contactCard}>
+            <fieldset>
+              <label for="in-email">E-mail</label>
+              <input id="in-email" type="email" required></input>
+
+              <label for="in-subject">Assunto</label>
+              <input id="in-subject" type="text" required></input>
+
+              <label for="in-message">Sua Mensagem</label>
+              <textarea id="in-message" type="text" required></textarea>
+            </fieldset>
+          </div>
+          <div className={homeStyles.buttonContainer}>
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+
+
+      </section>
+
     </Layout>
   )
 }
+export default Home;

@@ -1,40 +1,64 @@
 header {
-  background-color: rgb(255, 255, 255);
-  padding: 20px;
-  margin-top: 0;
+  background-color: #51C0C0;
+  height: 99px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 99px;
+  max-width: 1740px;
+}
+
+.header-container a {
+  color: #fafafa;
+  text-decoration: none;
 }
 
 header h1 {
-  margin: 0px 0px 0px 0px;
-  float: left;
+  font-size: 48px;
+  margin-left: 120px;
+  margin-right: 148px;
 }
 
-header h1 img {
-  display: inline-block;
-  height: 100px;
-  vertical-align: middle;
+.logo-wrapper img {
+  height: 48px;
 }
 
-.nav {
-  list-style-type: none;
-  text-align: right;
+.logo-wrapper a {
+  display: flex;
 }
 
-.nav li {
-  display: inline-block;
-  padding: 5px 10px;
-  border-radius: 7px;
+.header-container ul {
+  display: flex;
+  align-items: center;
 }
 
-.menu-option {
-  font-weight: bold;
-  transition: color 0.4s ease;
+.nav-item {
+  display: flex;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fafafa;
+  list-style: none;
+  margin: 0 84px 0 0;
+  transition: color 0.5s ease;
 }
 
-.nav li a:hover {
-  color: black;
+.nav-item,
+.nav-item-active {
+  align-items: center;
 }
 
-.active-menu-option {
-  color: black;
+.nav-item:hover,
+.nav-item-active {
+  color: #262626;
+}
+
+.github-logo {
+  margin-left: auto;
+  color: #fafafa;
+  font-size: 36px;
+  align-items: flex-end;
+  cursor: pointer;
+  margin-right: 124px;
 }

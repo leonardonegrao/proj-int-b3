@@ -1,0 +1,213 @@
+/* first section of the homepage */
+
+.top {
+  background-color: #51C0C0;
+  height: 459px;
+}
+
+.top h1 {
+  font-size: 3em;
+  font-weight: 500;
+  color: #fafafa;
+  padding-top: 150px;
+  margin-left: 120px;
+  margin-bottom: 16px;
+}
+
+.top p {
+  max-width: 548px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #fafafa;
+  margin-left: 120px;
+}
+
+.card-top {
+  position: absolute;
+  top: 303px;
+  left: 1270px;
+  width: 356px;
+  height: 510px;
+
+  background: transparent url(../images/home-assets/programming_kit8-net.png);
+  background-position: center;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+}
+
+/* second section of the homepage (blog) */
+
+.blog-section h2 {
+  margin-top: 148px;
+  margin-bottom: 32px;
+  margin-left: 120px;
+  font-size: 2.25em;
+}
+
+.flex-blog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 148px;
+}
+
+.flex-blog .card-blog {
+  margin-right: 32px;
+  margin-left: 120px;
+  height: 342px;
+  width: 342px;
+
+  background: url(../images//home-assets/floating_button_800x600.png);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+}
+
+.flex-blog p {
+  width: 266px;
+  font-size: 1.5em;
+}
+
+.flex-blog button {
+  margin-top: 32px;
+  width: 193px;
+  height: 48px;
+}
+
+/* third section of the homepage (techs) */
+
+.techs-section {
+  background-color: #6282CB;
+  height: 789px;
+}
+
+.techs-section h2 {
+  color: #fafafa;
+  font-size: 2.25em;
+  text-align: center;
+  padding-top: 76px;
+  margin-bottom: 96px;
+  position: relative;
+  z-index: 0;
+}
+
+.techs-section .techs-cards {
+  display: flex;
+  margin-top: 96px;
+  margin-right: 50px;
+  margin-bottom: 36px;
+  margin-left: 122px;
+}
+
+.techs-cards .tech-card {
+  width: 512px;
+  height: 446px;
+  box-shadow: 0px 3px 8px #00000029;
+  margin-right: 72px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.techs-cards .react-card {
+  background: url(../images/home-assets/react.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.techs-cards .js-card {
+  background: url(../images/home-assets/javascript.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.techs-cards .angular-card {
+  background: url(../images/home-assets/9c9d933568e70298f5a88549b4de7da9.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.techs-section .button-center {
+  display: flex;
+  justify-content: center;
+}
+
+.techs-section button {
+  width: 193px;
+  height: 48px;
+}
+
+/* fourth section of homepage (contact form) */
+
+.contact-section h2 {
+  font-size: 2.25em;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 134px;
+}
+
+.contact-section .contact-card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  max-width: 1112px;
+  margin: auto;
+  height: 460px;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+  background-color: #fafafa;
+  padding-top: 10px;
+}
+
+.contact-card label {
+  font-size: 1.5em;
+}
+
+.contact-card input {
+  display: block;
+  width: 1048px;
+  height: 48px;
+  margin-top: 8px;
+  margin-bottom: 42px;
+  border: 1px solid #707070;
+  border-radius: 12px;
+  padding-left: 10px;
+  font-size: 1em;
+  text-align: center;
+  color: #262626;
+}
+
+.contact-card input:focus {
+  border-color: #51C0C0;
+  outline: none;
+}
+
+.contact-card textarea {
+  display: block;
+  width: 1048px;
+  height: 122px;
+  margin-top: 8px;
+  border: 1px solid #707070;
+  border-radius: 12px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color: #262626;
+}
+
+.contact-card textarea:focus {
+  border-color: #51C0C0;
+  outline: none;
+}
+
+.contact-section .button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-section button {
+  width: 193px;
+  height: 48px;
+  margin-top: 36px;
+  margin-bottom: 128px;
+}
