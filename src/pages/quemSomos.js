@@ -37,20 +37,20 @@ const QuemSomos = () => {
               <h1>Leonardo Negrão</h1>
               <div className={quemSomosStyles.social}>
                 <a
-                  href="https://github.com/MatheusPedrero"
+                  href="https://github.com/leonardonegrao"
                   target="_blank"
                   rel="noopener no referrer"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
-                  href="https://br.linkedin.com/in/matheus-pedrero-7a71081a7"
+                  href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
                   target="_blank"
                   rel="noopener no referrer"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
-                <a href="mailto:matheus.pedrero@outlook.com">
+                <a href="mailto:leonardolnegrao@gmail.com">
                   <FontAwesomeIcon icon={faEnvelope} />
                 </a>
               </div>
@@ -85,20 +85,20 @@ const QuemSomos = () => {
                 <h1>Matheus Pedrero</h1>
                 <div className={quemSomosStyles.social}>
                   <a
-                    href="https://github.com/leonardonegrao"
+                    href="https://github.com/MatheusPedrero"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
+                    href="https://br.linkedin.com/in/matheus-pedrero-7a71081a7"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon icon={faLinkedinIn} />
                   </a>
-                  <a href="mailto:leonardolnegrao@gmail.com">
+                  <a href="mailto:matheus.pedrero@outlook.com">
                     <FontAwesomeIcon icon={faEnvelope} />
                   </a>
                 </div>
