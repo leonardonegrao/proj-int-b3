@@ -8,21 +8,26 @@
 
 .main {
   position: relative;
+  height: 746px;
+  max-width: 1239px;
+  margin: auto;
 }
 
 .necessities {
+  position: absolute;
+  top: 00px;
+  left: 363.5px;
   max-width: 512px;
   height: 446px;
   background-color: #fafafa;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 12px;
-  margin: auto;
+  margin: 100px auto 0px auto;
   padding: 108px 99px 108px 99px;
   text-align: center;
 }
 
 .container-bubble {
-
   width: 100px;
 }
 
@@ -42,4 +47,137 @@
   font-size: 60px;
   color: #fafafa;
   text-align: center;
+}
+
+.main-techs {
+  max-width: 90%;
+  margin: auto;
+}
+
+.techDescription {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-bottom: 124px;
+  align-items: flex-start;
+  font-kerning: 1.2em;
+  max-width: 90%;
+  margin: 124px auto 124px auto;
+}
+
+.techDescription p {
+  margin-top: 1.5em;
+}
+
+.techDescription-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.techDescription-right .card-tech {
+  margin-left: auto;
+}
+
+.card-tech {
+  display: flex;
+  justify-content: center;
+  width: 446px;
+  height: 446px;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.card-tech img {
+  height: 100%;
+}
+
+.techDescription .description {
+  max-width: 536px;
+  margin-left: 38px;
+  margin-right: 72px;
+}
+
+.container-flex-outras-techs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+}
+
+.container-flex-outras-techs h3 {
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+.container-card-outras-techs {
+  text-align: center;
+}
+
+.container-flex-outras-techs .card-tech {
+  margin-top: 20px;
+  width: 373.7px;
+  height: 373.3px;
+}
+
+/* Patterns */
+
+.angular-path {
+  overflow: visible;
+  position: absolute;
+  width: 524.722px;
+  height: 232.883px;
+  left: 99px;
+  top: 19.993px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.react-path {
+  overflow: visible;
+  position: absolute;
+  width: 523px;
+  height: 2px;
+  left: 100.5px;
+  top: 50.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.node-path {
+  overflow: visible;
+  position: absolute;
+  width: 524.722px;
+  height: 232.888px;
+  left: 100px;
+  top: -160px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.html-path {
+  overflow: visible;
+  position: absolute;
+  width: 524.722px;
+  height: 232.883px;
+  left: -523px;
+  top: 19.993px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.css-path {
+  overflow: visible;
+  position: absolute;
+  width: 523px;
+  height: 2px;
+  left: -523px;
+  top: 50.5px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.js-path {
+  overflow: visible;
+  position: absolute;
+  width: 524.722px;
+  height: 232.888px;
+  left: -523px;
+  top: -160px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
