@@ -114,14 +114,14 @@ const QuemSomos = () => {
               <h1>Daniel Pereira</h1>
               <div className={quemSomosStyles.social}>
                 <a
-                  href="https://github.com/leonardonegrao"
+                  href="https://github.com/danielPereiraV"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
+                  href="https://www.linkedin.com/in/daniel-vitor-4305481ab/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
