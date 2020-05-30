@@ -1,11 +1,11 @@
 import React from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 
 import Layout from "../components/layout"
 import Head from "../components/head"
-import Patterns from '../patterns/quemSomosPatterns'
+import Patterns from "../patterns/quemSomosPatterns"
 
 import quemSomosStyles from "../styles/quemSomos.module.scss"
 
@@ -18,11 +18,13 @@ const QuemSomos = () => {
     <Layout>
       <Head title="Quem Somos" />
       <div className={quemSomosStyles.header}>
-        <div className='title-container'><h1>Quem Somos</h1></div>
+        <div className="title-container">
+          <h1>Quem Somos</h1>
+        </div>
       </div>
 
       <div className={quemSomosStyles.main}>
-        <div className='container'>
+        <div className="container">
           <div className={quemSomosStyles.patterns}>
             <Patterns />
           </div>
@@ -34,15 +36,35 @@ const QuemSomos = () => {
               </div>
               <h1>Leonardo Negrão</h1>
               <div className={quemSomosStyles.social}>
-                <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
-                <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a
+                  href="https://github.com/MatheusPedrero"
+                  target="_blank"
+                  rel="noopener no referrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a
+                  href="https://br.linkedin.com/in/matheus-pedrero-7a71081a7"
+                  target="_blank"
+                  rel="noopener no referrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+                <a href="mailto:matheus.pedrero@outlook.com">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </a>
               </div>
             </div>
             <div className={quemSomosStyles.description}>
               <p>Estudante de Engenharia de Software na Unifil.</p>
-              <p>Trabalha com Javascript e os frameworks React e Angular, além de Node para lógicas de back-end.</p>
-              <p>Também tem envolvimento na parte de design e front-end com HTML5, CSS3 e design de interfaces em Figma e Adobe XD.</p>
+              <p>
+                Trabalha com Javascript e os frameworks React e Angular, além de
+                Node para lógicas de back-end.
+              </p>
+              <p>
+                Também tem envolvimento na parte de design e front-end com
+                HTML5, CSS3 e design de interfaces em Figma e Adobe XD.
+              </p>
             </div>
           </div>
 
@@ -50,7 +72,11 @@ const QuemSomos = () => {
             <div className={quemSomosStyles.member}>
               <div className={quemSomosStyles.description}>
                 <p>Estudante de Engenharia de Software na Unifil.</p>
-                <p>Desenvolve em Java e JavaScript. Utiliza tecnologias como Angular e Ionic para ampliar as possibilidades de desenvolvimento.</p>
+                <p>
+                  Desenvolve em Java e JavaScript. Utiliza tecnologias como
+                  Angular e Ionic para ampliar as possibilidades de
+                  desenvolvimento.
+                </p>
               </div>
               <div className={quemSomosStyles.cardMember}>
                 <div className={quemSomosStyles.avatar}>
@@ -58,9 +84,23 @@ const QuemSomos = () => {
                 </div>
                 <h1>Matheus Pedrero</h1>
                 <div className={quemSomosStyles.social}>
-                  <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
-                  <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                  <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+                  <a
+                    href="https://github.com/leonardonegrao"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
+                  <a
+                    href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                  </a>
+                  <a href="mailto:leonardolnegrao@gmail.com">
+                    <FontAwesomeIcon icon={faEnvelope} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -73,19 +113,36 @@ const QuemSomos = () => {
               </div>
               <h1>Daniel Pereira</h1>
               <div className={quemSomosStyles.social}>
-                <a href='https://github.com/leonardonegrao' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
-                <a href='https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faLinkedinIn} /></a>
-                <a href='mailto:leonardolnegrao@gmail.com'><FontAwesomeIcon icon={faEnvelope} /></a>
+                <a
+                  href="https://github.com/leonardonegrao"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faGithub} />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </a>
+                <a href="mailto:leonardolnegrao@gmail.com">
+                  <FontAwesomeIcon icon={faEnvelope} />
+                </a>
               </div>
             </div>
             <div className={quemSomosStyles.description}>
               <p>Estudante de Engenharia de Software na Unifil.</p>
-              <p>Focado em programação Java, complementa seu conhecimento com front-end web e React.</p>
+              <p>
+                Focado em programação Java, complementa seu conhecimento com
+                front-end web e React.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </Layout >
+    </Layout>
   )
 }
 
