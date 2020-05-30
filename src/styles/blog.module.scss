@@ -1,0 +1,66 @@
+.header {
+  height: 459px;
+  background: url(../images/blog-assets/__2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -430px;
+}
+
+@media (min-width: 1920px) {
+  .header {
+    background-position: 0px -830px;
+  }
+}
+
+.posts-container {
+  max-width: 812px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.posts-container .post {
+  width: 812px;
+  min-height: 428px;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+  background-color: #fafafa;
+  margin-bottom: 24px;
+}
+
+.post p {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  margin-left: 18px;
+  font-size: 1.125em;
+}
+
+.title-and-date-container {
+  display: flex;
+}
+
+.title-and-date-container h2 {
+  font-size: 2.25em;
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.title-and-date-container sub {
+ justify-self: flex-end;
+ margin-left: auto;
+ margin-right: 16px;
+ margin-top: 32px;
+}
+
+.banner-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 290px;
+  border-radius: 0 0 12px 12px;
+}
+
+.banner-container img {
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+}

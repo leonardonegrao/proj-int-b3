@@ -1,14 +1,24 @@
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: white;
-  height: 70px;
+  height: 156px;
+  background-color: #51C0C0;
+  padding: 37px 0 37px 0;
 }
 
-footer h3 {
-  vertical-align: middle;
-  text-align: end;
-  margin-right: 15px;
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 82px;
+}
+
+.copyright {
+  font-size: 1.75em;
+  font-weight: 400;
+  margin-right: 8px;
+  color: #fafafa;
+}
+
+footer img {
+  height: 82px;
+  margin-right: 124px;
 }

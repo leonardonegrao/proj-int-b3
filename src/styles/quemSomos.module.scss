@@ -1,21 +1,84 @@
-.bio {
-  text-align: center;
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .patterns {
+    display: none;
+  }
+}
+
+.header {
+  height: 459px;
+  background: url(../images/quem-somos-assets/muti_dribbble-800x600.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0px -300px;
+}
+
+.member {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  margin-bottom: 124px;
+  align-items: center;
+
+}
+
+.right-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.right-container .card-member {
+  margin-left: auto;
+}
+
+.card-member {
+  width: 536px;
+  height: 437px;
+  box-shadow: 0px 3px 8px #00000029;
+  border-radius: 12px;
+  background-color: #fafafa;
+}
+
+.member .description {
+  max-width: 536px;
+  margin-left: 38px;
+  margin-right: 72px;
+}
+
+.description p {
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .avatar {
-  border-radius: 100px;
-  display: block;
-  max-width: 50%;
-  margin: 10px auto;
-  height: 150px;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  margin-bottom: 32px;
 }
 
-.contact {
-  display: block;
-  max-width: 50%;
-  margin: auto;
+.card-member img {
+  height: 173px;
+  border-radius: 50%;
+  text-align: center;
 }
 
-.contact img {
-  display: inline-block;
+.card-member h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.card-member .social {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+}
+
+.card-member .social a {
+  margin-top: 36px;
+  margin-left: 24px;
 }

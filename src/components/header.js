@@ -1,7 +1,9 @@
 import React from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "gatsby"
 
-import icon from "../images/LogoMakr_161lgY.png"
+import logo from '../images/logo-full-claro.png'
 
 import "../styles/global.scss"
 import headerStyles from "../styles/header.module.scss"
@@ -9,52 +11,36 @@ import headerStyles from "../styles/header.module.scss"
 const Header = () => {
   return (
     <header>
-      <div>
+      <div className={headerStyles.headerContainer}>
         <h1>
-          <Link to="/">
-            <img src={icon} alt="Big Three"></img>
-          </Link>
+          <div className={headerStyles.logoWrapper}>
+            <Link to='/'>
+              <img src={logo} style={{ width: '196px', height: 'auto' }}></img>
+            </Link>
+          </div>
+
         </h1>
-      </div>
-      <div className={headerStyles.nav}>
-        <ul>
-          <li>
-            <Link
-              className={headerStyles.menuOption}
-              activeClassName={headerStyles.activeMenuOption}
-              to="/"
-            >
-              <h3>Blog</h3>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.menuOption}
-              activeClassName={headerStyles.activeMenuOption}
-              to="/projetosPessoais"
-            >
-              <h3>Projetos Pessoais</h3>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.menuOption}
-              activeClassName={headerStyles.activeMenuOption}
-              to="/quemSomos"
-            >
-              <h3>Quem Somos</h3>
-            </Link>
-          </li>
-          <li>
-            <Link
-              className={headerStyles.menuOption}
-              activeClassName={headerStyles.activeMenuOption}
-              to="/techStack"
-            >
-              <h3>Tech Stack</h3>
-            </Link>
-          </li>
-        </ul>
+
+        <div>
+          <ul>
+            <div>
+              <Link exact className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/blogHome'><li>Blog</li></Link>
+            </div>
+            <div>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/quemSomos'><li>Quem Somos</li></Link>
+            </div>
+            <div>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/projetosPessoais'><li>Projetos</li></Link>
+            </div>
+            <div>
+              <Link className={headerStyles.navItem} activeClassName={headerStyles.navItemActive} to='/techStack'><li>Tech Stack</li></Link>
+            </div>
+          </ul>
+        </div>
+
+        <div className={headerStyles.githubLogo}>
+          <a href="https://github.com/leonardonegrao/proj-int-b3" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+        </div>
       </div>
     </header>
   )
