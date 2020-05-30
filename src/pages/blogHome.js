@@ -31,9 +31,13 @@ export default () => {
     <Layout>
       <Head title="Blog" />
 
-      <div className={blogStyles.header}><div className='title-container'><h1>Blog</h1></div></div>
+      <div className={blogStyles.header}>
+        <div className="title-container">
+          <h1>Blog</h1>
+        </div>
+      </div>
 
-      <div className='container'>
+      <div className="container">
         <div className={`${blogStyles.postsContainer} main`}>
           {data.allContentfulBlogPost.edges.map(edge => {
             return (
@@ -46,13 +50,13 @@ export default () => {
                 </div>
                 <p>{edge.node.subtitle}</p>
                 <div className={blogStyles.bannerContainer}>
-                  <img src={edge.node.banner.file.url}></img>
+                  <img alt="Post header" src={edge.node.banner.file.url}></img>
                 </div>
               </article>
             )
           })}
         </div>
       </div>
-    </Layout >
+    </Layout>
   )
 }

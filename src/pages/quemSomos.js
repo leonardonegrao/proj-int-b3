@@ -39,14 +39,14 @@ const QuemSomos = () => {
                 <a
                   href="https://github.com/leonardonegrao"
                   target="_blank"
-                  rel="noopener no referrer"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a
                   href="https://www.linkedin.com/in/leonardo-negr%C3%A3o-698b75190/"
                   target="_blank"
-                  rel="noopener no referrer"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>

@@ -202,7 +202,7 @@ const TechStack = () => {
         <div className={techStackStyles.mainTechs}>
           <div id="1" className={techStackStyles.techDescription}>
             <div className={techStackStyles.cardTech}>
-              <img src={javascript}></img>
+              <img alt="Javascript ilustração" src={javascript}></img>
             </div>
             <div className={techStackStyles.description}>
               <h1>JavaScript: A base de tudo</h1>
@@ -245,16 +245,26 @@ const TechStack = () => {
                 capacidades dia após dia, o ReactJS promete levar o JS ao
                 futuro.
               </p>
-              <p>Saiba mais sobre a biblioteca ReactJS clicando aqui.</p>
+              <p>
+                Saiba mais sobre a biblioteca ReactJS clicando {""}
+                <a
+                  href="https://pt-br.reactjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  aqui
+                </a>
+                .
+              </p>
             </div>
             <div className={techStackStyles.cardTech}>
-              <img src={react}></img>
+              <img alt="ReactJS ilustração" src={react}></img>
             </div>
           </div>
 
           <div id="3" className={techStackStyles.techDescription}>
             <div className={techStackStyles.cardTech}>
-              <img src={angular}></img>
+              <img alt="Angular ilustração" src={angular}></img>
             </div>
             <div className={techStackStyles.description}>
               <h1>Angular: JS polido para não perder tempo</h1>
@@ -273,7 +283,18 @@ const TechStack = () => {
                 desenvolvimento web e mobile ao lidar com o HTML5 e o CSS3
                 direto no código TS.
               </p>
-              <p> Saiba mais sobre a plataforma Angular clicando aqui.</p>
+              <p>
+                {" "}
+                Saiba mais sobre a plataforma Angular clicando{"  "}
+                <a
+                  href="https://angular.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  aqui
+                </a>
+                .
+              </p>
             </div>
           </div>
         </div>
@@ -285,19 +306,19 @@ const TechStack = () => {
             <div className={techStackStyles.containerCardOutrasTechs}>
               <h3>Design de interfaces com Figma</h3>
               <div className={techStackStyles.cardTech}>
-                <img src={figma}></img>
+                <img alt="Figma ilustração" src={figma}></img>
               </div>
             </div>
             <div className={techStackStyles.containerCardOutrasTechs}>
               <h3>Consumo de APIs com GraphQL</h3>
               <div className={techStackStyles.cardTech}>
-                <img src={graphql}></img>
+                <img alt="GraphQL ilustração" src={graphql}></img>
               </div>
             </div>
             <div className={techStackStyles.containerCardOutrasTechs}>
               <h3>Criação de sites estáticos com Gatsby</h3>
               <div className={techStackStyles.cardTech}>
-                <img src={gatsby}></img>
+                <img alt="Gatsby ilustração" src={gatsby}></img>
               </div>
             </div>
           </div>
