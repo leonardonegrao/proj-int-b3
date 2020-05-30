@@ -1,19 +1,50 @@
-.post {
-  padding: 12px;
+.title {
+  font-size: 36px;
+  margin-bottom: 16px
+}
+
+.subtitle {
+  font-size: 26px;
+}
+
+.date {
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  margin-top: 32px
+}
+
+.container-post-body {
+  max-width: 1352px;
+  margin: auto;
+}
+
+.divisor {
+  background-color: #262626;
+  width: 100%;
+  height: 1px;
+  margin-top: 5px;
+}
+
+.postBody {
+  max-width: 1076px;
+  margin: auto;
+  padding: 64px 120px 64px 120px;
+  font-family: "Merriweather", serif;
+}
+
+.postBody p {
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
+.post-img-container {
+  display: flex;
+  justify-content: center;
 }
 
 .post-img {
-  display: block;
-  width: 90%;
-  max-width: 600px;
-  margin: 40px auto;
-  border-radius: 15px;
-}
-
-.post-body {
-  margin: 40px;
-}
-
-.disqus {
-  margin-top: 100px;
+  margin: 32px 0 32px 0;
+  border-radius: 12px;
 }

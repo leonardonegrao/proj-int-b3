@@ -20,17 +20,17 @@ const ProjetosPessoais = () => {
       <div className={projetosPessoaisStyles.header}>
         <div className='title-container'><h1>Projetos</h1></div>
       </div>
-      <div className='main'>
+      <div className='container'>
 
         <div id="1" className={projetosPessoaisStyles.project}>
           <div className={projetosPessoaisStyles.cardProject}>
             <h1>filmesbr</h1>
             <div className={projetosPessoaisStyles.description}>
-              <p>O filmesbr é um website em Javascript, com estilização feita com a ferramenta Bootstrap. O projeto tinha como intuito o treino das habilidades de Javascript avançado, como também OOP.</p>
-              <p>O site possui um banco de dados de filmes (guardado em um arquivo JSON). O usuário clica em um botão de sorteio e lhe é sorteado um filme do banco, as informações são apresentadas, e.g as plataformas on-line que podem ser utilizadas para assistir.</p>
+              <p>O filmesbr é um website em Javascript, com estilização feita com a ferramenta Bootstrap.</p>
+              <p>O site possui um banco de dados de filmes. O usuário clica em um botão de sorteio e lhe é sorteado um filme do banco, as informações são apresentadas</p>
             </div>
             <div className={projetosPessoaisStyles.repos}>
-              <a href='https://github.com/leonardonegrao/filmesbr-site' target='_blank' rel='noopener noreffer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://github.com/leonardonegrao/filmesbr-site' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@ const ProjetosPessoais = () => {
               <p>Projeto simples para estudo de ReactJS, seguindo as aulas de um curso da Alura. O site permite a adição e remoção de livros de uma lista. O projeto ainda está em desenvolvimento, conforme o acompanhamento do curso.</p>
             </div>
             <div className={projetosPessoaisStyles.repos}>
-              <a href='https://github.com/leonardonegrao/alura-react-casa-do-codigo' target='_blank' rel='noopener noreffer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://github.com/leonardonegrao/alura-react-casa-do-codigo' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
             </div>
           </div>
         </div>
@@ -62,7 +62,7 @@ const ProjetosPessoais = () => {
               <p>Site em ReactJS para acompanhamento de curso da Rocketseat. O projeto tinha como propósito treinar o que foi ensinado no curso, principalmente paginação e a utilização de uma lista dinâmica.</p>
             </div>
             <div className={projetosPessoaisStyles.repos}>
-              <a href='https://github.com/leonardonegrao/rocketseat-reactjs' target='_blank' rel='noopener noreffer'><FontAwesomeIcon icon={faGithub} /></a>
+              <a href='https://github.com/leonardonegrao/rocketseat-reactjs' target='_blank' rel='noopener noreferrer'><FontAwesomeIcon icon={faGithub} /></a>
             </div>
           </div>
 

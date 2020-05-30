@@ -1,0 +1,94 @@
+.Polygon_2 {
+		overflow: hidden;
+		position: absolute;
+		width: 46px;
+		height: 40px;
+		transform: rotate(173deg);
+		transform-origin: center;
+		top: 1569px;
+		left: 1588px;
+	}
+	.Ellipse_7 {
+		position: absolute;
+		overflow: visible;
+		width: 25px;
+		height: 25px;
+		left: 1811px;
+		top: 1693px;
+	}
+	.Ellipse_17 {
+		position: absolute;
+		overflow: visible;
+		width: 25px;
+		height: 25px;
+		top: 811px;
+		left: 391px;
+	}
+	.Polygon_1 {
+		overflow: hidden;
+		position: absolute;
+		width: 46px;
+		height: 40px;
+		transform: rotate(82deg);
+		transform-origin: center;
+		top: 1739px;
+		left: 298px;
+	}
+	.Polygon_11 {
+		overflow: hidden;
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 1404px;
+		top: 235px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	.Path_2 {
+		overflow: visible;
+		position: absolute;
+		width: 1120.073px;
+		height: 534.241px;
+		top: 538px;
+    left: 494px;
+		transform: matrix(1,0,0,1,0,0) rotate(180deg);
+		z-index: -1;
+	}
+	.Ellipse_10 {
+		position: absolute;
+		overflow: visible;
+		width: 25px;
+		height: 25px;
+		left: 1638px;
+		top: 425px;
+	}
+	.Path_5 {
+		overflow: visible;
+		position: absolute;
+		width: 1118.93px;
+		height: 535.961px;
+		transform: rotate(120deg);
+		transform-origin: center;
+		left: 414px;
+		top: 946px;
+		z-index: -1;
+	}
+	.Polygon_14 {
+		overflow: hidden;
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		top: 1008px;
+		left: 377px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+
+	@media (max-width: 1536px) {
+		.Path_2 {
+			top: 538px;
+			left: 254px;
+		}
+		.Path_5 {
+		left: 214px;
+		top: 946px;
+		}
+	}

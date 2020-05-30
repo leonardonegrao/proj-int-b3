@@ -11,7 +11,6 @@ const Home = () => {
     <Layout>
       <div className={homeStyles.main}>
         <Patterns />
-
         <section className={homeStyles.top}>
           <h1>Desenvolvimento Web do começo ao fim</h1>
           <p>Serviços de design, desenvolvimento front-end, back-end e mobile para satisfazer todas as suas necessidades.</p>

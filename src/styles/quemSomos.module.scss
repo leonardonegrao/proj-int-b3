@@ -1,3 +1,14 @@
+.main {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .patterns {
+    display: none;
+  }
+}
+
 .header {
   height: 459px;
   background: url(../images/quem-somos-assets/muti_dribbble-800x600.jpg);
@@ -7,9 +18,12 @@
 }
 
 .member {
+  position: relative;
+  z-index: 1;
   display: flex;
   margin-bottom: 124px;
   align-items: center;
+
 }
 
 .right-container {
@@ -26,6 +40,7 @@
   height: 437px;
   box-shadow: 0px 3px 8px #00000029;
   border-radius: 12px;
+  background-color: #fafafa;
 }
 
 .member .description {

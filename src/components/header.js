@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { Link } from "gatsby"
 
-import logo from '../images/logo-full-claro.svg'
+import logo from '../images/logo-full-claro.png'
 
 import "../styles/global.scss"
 import headerStyles from "../styles/header.module.scss"
@@ -15,7 +15,7 @@ const Header = () => {
         <h1>
           <div className={headerStyles.logoWrapper}>
             <Link to='/'>
-              <img src={logo}></img>
+              <img src={logo} style={{ width: '196px', height: 'auto' }}></img>
             </Link>
           </div>
 
